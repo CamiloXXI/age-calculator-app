@@ -14,7 +14,7 @@ function formValues() {
   let fecha = {
     day,
     month,
-    year
+    year,
   };
 
   let date = convertDate(fecha);
@@ -71,7 +71,7 @@ function convertDate({ day, month, year }) {
     day,
     month,
     year,
-    conditionsMet
+    conditionsMet,
   };
 
   return fecha;
@@ -81,6 +81,14 @@ function validFormat({ conditionsMet }) {
   if (conditionsMet) {
     D.textContent = `Las condiciones se cumplen.`;
     D.getElementById("verified").classList.remove("error");
+    D.querySelectorAll(".hide-content").forEach((content) => {
+      content.style.display = "none";
+      content.classList.remove("error");
+    });
+    D.querySelectorAll("label").forEach((label) => {
+      label.classList.remove("error");
+      label.firstElementChild.classList.remove("error-border");
+    });
   } else {
     D.querySelectorAll(".hide-content").forEach((content) => {
       content.style.display = "block";
