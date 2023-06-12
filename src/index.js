@@ -1,8 +1,4 @@
 const D = document;
-const $calculate = D.getElementById("calculate");
-let date = new Date().getFullYear();
-let day = new Date().getDate();
-let month = new Date().toLocaleString("es-ES", { month: "long" });
 
 function formValues() {
   // Obtener los valores de los inputs
@@ -14,7 +10,7 @@ function formValues() {
   let fecha = {
     day,
     month,
-    year,
+    year
   };
 
   let date = convertDate(fecha);
@@ -71,7 +67,7 @@ function convertDate({ day, month, year }) {
     day,
     month,
     year,
-    conditionsMet,
+    conditionsMet
   };
 
   return fecha;
@@ -135,7 +131,7 @@ function sendDate({ day, month, year }) {
   D.getElementById("years").textContent = edadAnios;
 }
 
-$calculate.addEventListener("click", (e) => {
+D.getElementById("calculate").addEventListener("click", (e) => {
   e.preventDefault();
   alert("click");
   formValues();

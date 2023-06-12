@@ -95,31 +95,45 @@ hr {
 
 @media (max-width: 768px) {
   #container {
-    width: 260px;
+    width: 85%;
+    height: 80vh;
     border-radius: 20px 20px 35% 20px;
   }
 
   #verified {
-    width: 200px;
+    width: 100%;
   }
 
   #verified > label {
-    width: 70px;
+    width: 70%;
+  }
+
+  #verified > label > input {
+    width: 80%;
+    padding: 10px;
   }
 
   hr {
-    width: 250px;
-    top: 148px;
+    width: 72%;
+    top: 168px;
   }
 
   #calculate {
     position: relative;
-    left: 100px;
-    margin-top: 18px;
+    left: 43%;
+    margin-top: 30px;
     margin-bottom: 25px;
   }
 
   #verified > input {
     margin-bottom: 10px;
+  }
+
+  div > p,
+  div > p > bold {
+    width: 80%;
+    font-size: 50px;
+    text-align: center;
+    margin: 20px 0 10px 0;
   }
 }
