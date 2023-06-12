@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./src/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/favicon-32x32.png"
+    />
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <h1 id="date"></h1>
+
+    <section id="container">
+      <form id="verified">
+        <label>
+          DAY
+          <input type="text" id="day" placeholder="DD" />
+          <p class="hide-content">Must be a valid day</p>
+        </label>
+        <label>
+          MONTH
+          <input type="text" id="month" placeholder="MM" />
+          <p class="hide-content">Must be a valid month</p>
+        </label>
+        <label>
+          YEAR
+          <input type="text" id="year" placeholder="YYYY" />
+          <p class="hide-content">Must be in the past</p>
+        </label>
+      </form>
+
+      <button id="calculate">
+        <img src="src/icon-arrow.svg" alt="icon-arrow" />
+      </button>
+      <hr />
+
+      <div>
+        <p><bold class="no-valid-format" id="years">- - </bold> years</p>
+        <p><bold class="no-valid-format" id="months">- - </bold> months</p>
+        <p><bold class="no-valid-format" id="days">- - </bold> days</p>
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/CamiloXXI" target="_blank"
+        >Camilo Usuga</a
+      >.
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
