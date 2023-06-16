@@ -133,6 +133,5 @@ function sendDate({ day, month, year }) {
 
 D.getElementById("calculate").addEventListener("click", (e) => {
   e.preventDefault();
-  alert("click");
   formValues();
 });
