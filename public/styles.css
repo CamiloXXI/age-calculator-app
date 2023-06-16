@@ -9,7 +9,8 @@ body {
 
 section {
   margin: 0 auto;
-  width: 480px;
+  width: 60%;
+  height: 75vh;
   padding: 25px;
   background-color: hsl(0, 0%, 100%);
   border-radius: 20px 20px 40% 20px;
@@ -21,7 +22,7 @@ form {
 
 form > label,
 label::placeholder {
-  width: 100px;
+  width: 50%;
   display: flex;
   flex-direction: column;
   margin: 0 10px 0 10px;
@@ -42,16 +43,16 @@ input {
 }
 
 div > p > bold {
-  font-size: 38px;
+  font-size: 58px;
   font-family: fantasy;
   font-weight: 800;
   color: hsl(259, 100%, 65%);
 }
 
 div > p {
-  margin: 0 0 0 0;
+  margin: 50px 0 0 0;
   font-family: fantasy;
-  font-size: 38px;
+  font-size: 58px;
   font-weight: 900;
 }
 
@@ -59,8 +60,8 @@ div > p {
   position: relative;
   width: 70px;
   height: 70px;
-  right: -370px;
-  top: 0px;
+  right: -640px;
+  top: 40px;
   margin: 0;
   border-radius: 50%;
   border-width: 0;
@@ -70,14 +71,14 @@ div > p {
 
 hr {
   position: fixed;
-  width: 420px;
-  top: 125px;
+  width: 50%;
+  top: 155px;
   z-index: 100;
 }
 
 .hide-content {
   display: none;
-  font-size: 10px;
+  font-size: 20px;
 }
 
 .error {
